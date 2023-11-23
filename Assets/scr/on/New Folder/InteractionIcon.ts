@@ -1,11 +1,12 @@
 import { ZepetoScriptBehaviour } from 'ZEPETO.Script';
-import { Camera, Canvas, Collider, GameObject, Transform, Object } from 'UnityEngine';
+import { Camera, Canvas, Collider, GameObject, Transform, Object, AnimationClip} from 'UnityEngine';
 import { Button } from 'UnityEngine.UI';
 import { UnityEvent } from 'UnityEngine.Events';
 import { ZepetoPlayers } from 'ZEPETO.Character.Controller';
  
 export default class InteractionIcon extends ZepetoScriptBehaviour {
-     
+    // AnimationClip
+    @SerializeField() private animationClip: AnimationClip; 
     // Icon
     @Header("[Icon]")
     @SerializeField() private prefIconCanvas: GameObject;
@@ -25,7 +26,6 @@ export default class InteractionIcon extends ZepetoScriptBehaviour {
      
      
     private Update() {
-        console.log("H");
         if (this._isDoneFirstTrig && this._canvas?.gameObject.activeSelf) {
             this.UpdateIconRotation();
         }
@@ -87,11 +87,11 @@ export default class InteractionIcon extends ZepetoScriptBehaviour {
     }
      
     private UpdateIconRotation() {
-        console.log("I");
         this._canvas.transform.LookAt(this._cachedWorldCamera.transform);
     }
  
     private OnClickIcon() {
         this.OnClickEvent?.Invoke();
-    }
+    }    
+    
 }
