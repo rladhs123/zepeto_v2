@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 6d1e34e403fdcc94faa9113baac4bf81
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    OpenCube extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n   
+    }\r\n}\r\nexports.default = OpenCube;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiT3BlbkN1YmUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJPcGVuQ3ViZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUVyRCxNQUFxQixRQUFTLFNBQVEscUNBQXFCO0lBR3ZELEtBQUs7SUFFTCxDQUFDO0NBRUo7QUFQRCwyQkFPQyJ9","assetPath":"Assets/scr/on/New
+    Folder/OpenCube.ts","manifest":{"properties":[],"name":"OpenCube","description":"","hasAnimatorMove":false},"isCompiled":true}'
+  typescriptHash: 8fa650f5ee541dc6b85e95c4b4800ef4
+  onlyWriteTrigger: 0
