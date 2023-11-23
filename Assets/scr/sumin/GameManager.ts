@@ -6,7 +6,6 @@ import {GameObject} from "UnityEngine";
 export default class GameManager extends ZepetoScriptBehaviour {
 
     private client:Client;
-    public gamePlayTime:number;
 
     //싱글톤
     public static instance:GameManager = null
