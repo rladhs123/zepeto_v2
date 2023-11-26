@@ -9,7 +9,7 @@ export default class GameTimer extends ZepetoScriptBehaviour {
     public timerUi:TextMeshProUGUI;
 
     //그외 필드
-    private active: boolean = true;
+    private active: boolean = false;
     private currentTime: number;
     private interval: number;
 
