@@ -323,7 +323,7 @@ PlayerSettings:
     m_APIs: 0b000000
     m_Automatic: 1
   - m_BuildTarget: MacStandaloneSupport
-    m_APIs: 10000000
+    m_APIs: 1100000010000000
     m_Automatic: 0
   - m_BuildTarget: LinuxStandaloneSupport
     m_APIs: 1100000015000000
@@ -680,7 +680,14 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Analytics: 1
+    Build: 0
+    Collab: 0
+    Game Performance: 0
+    Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -694,11 +701,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 2
-  cloudProjectId: f57c0fd5-a496-4224-a552-390c3c4601cf
+  cloudProjectId: 69949da4-e447-4a11-9744-dcf78d451533
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: zepeto_v2
-  organizationId: seanseo
+  organizationId: morningsoccer
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   virtualTexturingSupportEnabled: 0
