@@ -6,7 +6,6 @@ export default class extends Sandbox {
 
     //서버에서 사용할 함수 생성 onMessage에 등록하면 해당 messageType으로 호출 해서 사용가능
     onCreate(options: SandboxOptions) {
-
         // 위치움직인 경우 메시지를 보내고 받을수 있는 listener 추가
         this.onMessage("onChangedTransform", (client, message) => {
             const player = this.state.players.get(client.sessionId);
@@ -43,8 +42,6 @@ export default class extends Sandbox {
 
         
     }
-
-
 
     async onJoin(client: SandboxPlayer) {
         console.log(`[OnJoin] sessionId : ${client.sessionId}, userId : ${client.userId}`)

@@ -4,12 +4,23 @@ import {Room, RoomData} from "ZEPETO.Multiplay";
 import {Player, State, Vector3} from "ZEPETO.Multiplay.Schema";
 import {CharacterState, SpawnInfo, ZepetoPlayers, CharacterJumpState, ZepetoPlayer} from "ZEPETO.Character.Controller";
 import * as UnityEngine from "UnityEngine";
+import {GameObject} from "UnityEngine";
 
 export default class Client extends ZepetoScriptBehaviour {
     public multiPlay : ZepetoWorldMultiplay;
     private room : Room
     private zepetoPlayer : ZepetoPlayer
     private currentPlayers: Map<string, Player> = new Map<string, Player>();
+
+    //싱글톤
+    private static instance: Client = null;
+    public static getInstance(): Client {
+        if (this.instance == null) {
+            this.instance = GameObject.FindObjectOfType<Client>();
+        }
+        return this.instance;
+    }
+
     Start() {
         this.multiPlay.RoomCreated += (room:Room) => {
             this.room = room
@@ -36,7 +47,6 @@ export default class Client extends ZepetoScriptBehaviour {
                 }
             }
         }
-
     }
 
     //클라이언트 방 입장
@@ -149,5 +159,9 @@ export default class Client extends ZepetoScriptBehaviour {
         rotation.Add('z', transform.localEulerAngles.z);
         data.Add('rotation', rotation.GetObject());
         this.room.Send("onChangedTransform", data.GetObject());
+    }
+
+    public getCurrentPlayers() {
+        return this.currentPlayers;
     }
 }
