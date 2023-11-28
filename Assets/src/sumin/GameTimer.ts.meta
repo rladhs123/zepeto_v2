@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: ed9aaf4de3d7a154089a14dc772290f9
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst
+    UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nclass GameTimer extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\\r\\n    constructor() {\\r\\n        super(...arguments);\\r\\n        //\uADF8\uC678
+    \uD544\uB4DC\\r\\n        this.active = false;\\r\\n    }\\r\\n    static getInstance()
+    {\\r\\n        if (ZEPETO_Script_1.ZepetoScriptBehaviour.op_Equality(this.instance,
+    null)) {\\r\\n            this.instance = UnityEngine_1.GameObject.FindObjectOfType($typeof(GameTimer));\\r\\n       
+    }\\r\\n        return this.instance;\\r\\n    }\\r\\n    Start() {\\r\\n       
+    this.currentTime = this.gamePlayTime;\\r\\n    }\\r\\n    Update() {\\r\\n       
+    if (this.active) {\\r\\n            this.currentTime -= UnityEngine_1.Time.deltaTime;\\r\\n           
+    //\uC2DC\uAC04 \uCD08\uACFC \uC2DC \uC880\uBE44\uD300 \uC2B9\uB9AC \uBA54\uC2DC\uC9C0
+    \uBC0F \uB3D9\uC791\\r\\n            // if (this.currentTime <= 0) {\\r\\n           
+    //\\r\\n            // }\\r\\n            let minutes = UnityEngine_1.Mathf.Floor(this.currentTime
+    / 60);\\r\\n            let seconds = UnityEngine_1.Mathf.Floor(this.currentTime
+    % 60);\\r\\n            this.timerUi.text = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2,
+    '0')}`;\\r\\n        }\\r\\n    }\\r\\n    timerStart() {\\r\\n        this.active
+    = true;\\r\\n    }\\r\\n}\\r\\nexports.default = GameTimer;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FtZVRpbWVyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiR2FtZVRpbWVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQXFEO0FBQ3JELDZDQUFvRDtBQUdwRCxNQUFxQixTQUFVLFNBQVEscUNBQXFCO0lBQTVEOztRQU1JLE9BQU87UUFDQyxXQUFNLEdBQVksS0FBSyxDQUFDO0lBa0NwQyxDQUFDO0lBNUJVLE1BQU0sQ0FBQyxXQUFXO1FBQ3JCLElBbEJDLHFDQUFxQixDQTZDNG5MLFdBQVksQ0EzQjFwTCxJQUFJLENBQUMsUUFBUSxFQUFJLElBQUksR0FBRTtZQUN2QixJQUFJLENBQUMsUUFBUSxHQUFHLHdCQUFVLENBQUMsZ0JBQWdCLFNBQUMsU0FBUyxFQUFHLENBQUM7U0FDNUQ7UUFDRCxPQUFPLElBQUksQ0FBQyxRQUFRLENBQUE7SUFDeEIsQ0FBQztJQUVELEtBQUs7UUFDRCxJQUFJLENBQUMsV0FBVyxHQUFHLElBQUksQ0FBQyxZQUFZLENBQUM7SUFDekMsQ0FBQztJQUVELE1BQU07UUFDRixJQUFJLElBQUksQ0FBQyxNQUFNLEVBQUU7WUFDYixJQUFJLENBQUMsV0FBVyxJQUFJLGtCQUFJLENBQUMsU0FBUyxDQUFDO1lBQ25DLHlCQUF5QjtZQUN6QiwrQkFBK0I7WUFDL0IsRUFBRTtZQUNGLElBQUk7WUFDSixJQUFJLE9BQU8sR0FBVyxtQkFBSyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsV0FBVyxHQUFHLEVBQUUsQ0FBQyxDQUFDO1lBQ3pELElBQUksT0FBTyxHQUFXLG1CQUFLLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxXQUFXLEdBQUcsRUFBRSxDQUFDLENBQUM7WUFDekQsSUFBSSxDQUFDLE9BQU8sQ0FBQyxJQUFJLEdBQUcsR0FBRyxNQUFNLENBQUMsT0FBTyxDQUFDLENBQUMsUUFBUSxDQUFDLENBQUMsRUFBRSxHQUFHLENBQUMsSUFBSSxNQUFNLENBQUMsT0FBTyxDQUFDLENBQUMsUUFBUSxDQUFDLENBQUMsRUFBRSxHQUFHLENBQUMsRUFBRSxDQUFDO1NBQ2pHO0lBQ0wsQ0FBQztJQUVNLFVBQVU7UUFDYixJQUFJLENBQUMsTUFBTSxHQUFHLElBQUksQ0FBQTtJQUN0QixDQUFDO0NBRUo7QUF6Q0QsNEJBeUNDIn0=\",\"assetPath\":\"Assets/scr/sumin/GameTimer.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"mscorlib\",\"name\":\"gamePlayTime\",\"type\":\"System.Single\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"Unity.TextMeshPro\",\"name\":\"timerUi\",\"type\":\"TMPro.TextMeshProUGUI\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]}],\"name\":\"GameTimer\",\"description\":\"\",\"hasAnimatorMove\":false},\"isCompiled\":true}"
+  typescriptHash: 04a45375eee6f18296014c9cf14f97cb
+  onlyWriteTrigger: 0

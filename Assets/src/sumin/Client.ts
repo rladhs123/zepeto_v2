@@ -47,7 +47,6 @@ export default class Client extends ZepetoScriptBehaviour {
                 }
             }
         }
-
     }
 
     //클라이언트 방 입장
