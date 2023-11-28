@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 3fa74982bc8c5e549ac171b27e9f3745
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    UnityEngine_UI_1 = require(\"UnityEngine.UI\");\r\nclass bm extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\r\n    CrouchButtonClick() {\r\n        this.isClicked = !this.isClicked;\r\n       
+    if (this.isClicked)\r\n            this.button.GetComponent($typeof(UnityEngine_UI_1.Image)).sprite
+    = this.sprites[0];\r\n        else\r\n            this.button.GetComponent($typeof(UnityEngine_UI_1.Image)).sprite
+    = this.sprites[1];\r\n    }\r\n}\r\nexports.default = bm;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYm0uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJibS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCxtREFBK0M7QUFHL0MsTUFBcUIsRUFBRyxTQUFRLHFDQUFxQjtJQU1qRCxpQkFBaUI7UUFDYixJQUFJLENBQUMsU0FBUyxHQUFHLENBQUMsSUFBSSxDQUFDLFNBQVMsQ0FBQztRQUNqQyxJQUFHLElBQUksQ0FBQyxTQUFTO1lBQUUsSUFBSSxDQUFDLE1BQU0sQ0FBQyxZQUFZLFNBQUMsc0JBQUssR0FBSSxNQUFNLEdBQUcsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsQ0FBQzs7WUFDekUsSUFBSSxDQUFDLE1BQU0sQ0FBQyxZQUFZLFNBQUMsc0JBQUssR0FBSSxNQUFNLEdBQUcsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUMsQ0FBQztJQUNwRSxDQUFDO0NBRUo7QUFaRCxxQkFZQyJ9","assetPath":"Assets/scr/byungkyu/bm.ts","manifest":{"properties":[{"assembly":"UnityEngine.CoreModule","name":"sprites","type":"UnityEngine.Sprite[]","isArray":true,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"isClicked","type":"System.Boolean","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"UnityEngine.UI","name":"button","type":"UnityEngine.UI.Button","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"bm","description":"","hasAnimatorMove":false},"isCompiled":true}'
+  typescriptHash: b3afac7c1636835b4d74b5fe4638b937
+  onlyWriteTrigger: 0
