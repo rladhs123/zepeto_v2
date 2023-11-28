@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: 7c90215fe38dbf04a901b17822b92bf2
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst
+    Client_1 = require(\\\"./Client\\\");\\r\\nconst UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nconst
+    GameTimer_1 = require(\\\"./GameTimer\\\");\\r\\n//\uC804\uCCB4 \uC2DC\uAC04,
+    \uBC31\uC2E0 \uAE30\uACC4 \uC704\uCE58 \uC138\uD305, \uBC31\uC2E0 \uAE30\uACC4
+    \uC218\uB9AC \uD604\uD669, \uD300 \uB098\uB204\uAE30\\r\\nclass GameManager extends
+    ZEPETO_Script_1.ZepetoScriptBehaviour {\\r\\n    static getInstance() {\\r\\n       
+    if (ZEPETO_Script_1.ZepetoScriptBehaviour.op_Equality(this.instance, null)) {\\r\\n           
+    this.instance = UnityEngine_1.GameObject.FindObjectOfType($typeof(GameManager));\\r\\n       
+    }\\r\\n        return this.instance;\\r\\n    }\\r\\n    Start() {\\r\\n       
+    this.client = Client_1.default.getInstance();\\r\\n        this.gameTimer = GameTimer_1.default.getInstance();\\r\\n   
+    }\\r\\n    //\uC804\uCCB4 \uAC8C\uC784 \uD0C0\uC774\uBA38 \uC2DC\uC791\uD558\uAE30\\r\\n   
+    timerStart() {\\r\\n    }\\r\\n}\\r\\nexports.default = GameManager;\\r\\n//\uC2F1\uAE00\uD1A4\\r\\nGameManager.instance
+    = null;\\r\\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FtZU1hbmFnZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJHYW1lTWFuYWdlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOztBQUFBLGlEQUFxRDtBQUNyRCxxQ0FBOEI7QUFDOUIsNkNBQXVDO0FBQ3ZDLDJDQUFvQztBQUlwQyx3Q0FBd0M7QUFDeEMsTUFBcUIsV0FBWSxTQUFRLHFDQUFxQjtJQVFuRCxNQUFNLENBQUMsV0FBVztRQUNyQixJQWpCQyxxQ0FBcUIsQ0FrQzZnTSxXQUFZLENBakIzaU0sSUFBSSxDQUFDLFFBQVEsRUFBSSxJQUFJLEdBQUU7WUFDdkIsSUFBSSxDQUFDLFFBQVEsR0FBRyx3QkFBVSxDQUFDLGdCQUFnQixTQUFDLFdBQVcsRUFBRyxDQUFDO1NBQzlEO1FBQ0QsT0FBTyxJQUFJLENBQUMsUUFBUSxDQUFBO0lBQ3hCLENBQUM7SUFFRCxLQUFLO1FBQ0QsSUFBSSxDQUFDLE1BQU0sR0FBRyxnQkFBTSxDQUFDLFdBQVcsRUFBRSxDQUFDO1FBQ25DLElBQUksQ0FBQyxTQUFTLEdBQUcsbUJBQVMsQ0FBQyxXQUFXLEVBQUUsQ0FBQztJQUM3QyxDQUFDO0lBR0QsZ0JBQWdCO0lBQ1IsVUFBVTtJQUVsQixDQUFDOztBQXhCTCw4QkEwQkM7QUFwQkcsS0FBSztBQUNTLG9CQUFRLEdBQWUsSUFBSSxDQUFBIn0=\",\"assetPath\":\"Assets/src/sumin/GameManager.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"ZEPETO.World\",\"name\":\"multiPlay\",\"type\":\"ZEPETO.World.ZepetoWorldMultiplay\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]}],\"name\":\"GameManager\",\"description\":\"\",\"hasAnimatorMove\":false},\"isCompiled\":true}"
+  typescriptHash: 642713c0c89d00297698b36b32171fd6
+  onlyWriteTrigger: 0
