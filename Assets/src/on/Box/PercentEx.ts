@@ -51,7 +51,7 @@ export default class PercentEx extends ZepetoScriptBehaviour {
             this._canvas2.gameObject.SetActive(true);
             console.log(this.isTimePercent.value);
             console.log(this.startTime);
-            this.isTimePercent.value+=this.startTime;
+            this.isTimePercent.value=this.startTime;
             if(this.startTime>this.finishTime) {
                 this.buttonCheck=true;
                 this.HideSlide();
